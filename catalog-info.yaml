@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: w8hocdaow-nodejs-gitops
+  description: This is GitOps manifest for w8hocdaow-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: w8hocdaow-nodejs
+    janus-idp.io/tekton: w8hocdaow-nodejs 
+    backstage.io/kubernetes-id: w8hocdaow-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:w8hocdaow-nodejs

@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: w8hocdaow-nodejs-gitops-repository
+spec:
+  url: https://github.com/xjiangorg/w8hocdaow-nodejs-gitops
